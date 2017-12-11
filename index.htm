@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="hangmannew.js"></script>
+    <link rel="stylesheet" href="hangmannew.css"/>
+</head>
+<body>
+
+<div id="hangman">Hangman</div>
+
+<button id="myButton" onclick="startGame()">Start Game</button>
+<div id="showword"></div>
+
+<input type="text" id="guess" value="" size="25" onfocus="this.value=''">
+
+<button id="gsslttr" onclick="guessLetter()">Guess</button>
+<br>
+
+<label for="pool">Use only lower case letters. Guessed letters:</label>
+<div id="pool"></div>
+<div id="correct?"></div>
+<br>
+<label for="guessesremaining">Guesses Remaining:</label>
+<div id="guessesremaining"></div>
+<div id="lose"></div>
+<div id="winner"></div>
+</body>
+</html>
